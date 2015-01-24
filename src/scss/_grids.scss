@@ -1,0 +1,24 @@
+// Requirements
+// ============
+
+// @import "susy";
+
+// $susy: (
+//   columns: 12,
+//   gutters: 1/4,
+// );
+
+// body { 
+// 	@include container(80em); 
+// }
+
+// nav { 
+// 	@include span(25%); 
+// }
+
+// main {
+//   float: left;
+//   width: span(4);
+//   margin-left: span(2) + gutter();
+//   margin-right: gutter();
+// }
