@@ -6,8 +6,8 @@ module.exports = function( grunt ) {
 
   grunt.loadTasks( 'grunt-build' );
 
-  grunt.registerTask( "production", "Production sequence", [ "clean", "copy", "compass:production", "concat" ] ),
-  grunt.registerTask( "local", "Spin up a browser, watch for changes, and BrowserSync those changes.", [ "clean", "copy", "compass:local", "concat", "browserSync", "watch" ] );
+  grunt.registerTask( "production", "Production sequence", [ "clean", "compass:production", "concat", "copy" ] ),
+  grunt.registerTask( "local", "Spin up a browser, watch for changes, and BrowserSync those changes.", [ "clean", "compass:local", "concat", "copy", "browserSync", "watch" ] );
 
   grunt.registerTask( 'default', [ 'local' ] );
 
