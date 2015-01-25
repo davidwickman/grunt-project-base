@@ -13,6 +13,11 @@ module.exports = function( grunt ) {
     },
     production: {
       options: {
+        httpPath: "/",
+        cssDir: "dist/css",
+        sassDir: "src/scss",
+        imagesDir: "src/img",
+        javascriptsDir: "src/js",
         outputStyle: 'compressed'
       }
     }
