@@ -2,7 +2,7 @@
 
 Created this project to quickly have a grunt base that watches all the files for changes, concats javascript, compiles SASS, and spins up a quick local environment.
 
-##Dependancies
+##Dependencies
 
 - [NPM](https://www.npmjs.com/)
 - [Grunt](http://gruntjs.com/)
