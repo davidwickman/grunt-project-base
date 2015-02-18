@@ -4,12 +4,12 @@ module.exports = function( grunt ) {
   grunt.config.set( 'browserSync', {
     local: {
       bsFiles: {
-        src: 'dist/**'
+        src: '<%= config.dist %>/**'
       },
       options: {
         watchTask: true,
         server: {
-          baseDir: "dist"
+          baseDir: "<%= config.dist %>"
         }
       }
     }

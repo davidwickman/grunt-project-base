@@ -3,29 +3,22 @@
 module.exports = function( grunt ) {
   grunt.config.set( 'watch', {
     js: {
-      files: [ '<%= config.assets %>/js/**/*' ],
+      files: [ '<%= config.assets %>/js/**/*.js' ],
       tasks: [ 'clean:js', 'concat:js' ],
       options: {
         spawn: false
       }
     },
     css: {
-      files: [ '<%= config.assets %>/scss/**/*' ],
+      files: [ '<%= config.assets %>/scss/**/*.scss' ],
       tasks: [ 'clean:css', 'compass:local' ],
       options: {
         spawn: false
       }
     },
-    images: {
-      files: [ '<%= config.assets %>/img/**/*' ],
-      tasks: [ 'clean:images', 'copy:images' ],
-      options: {
-        spawn: false
-      }
-    },
     assets: {
-      files: [ '<%= config.src %>/**/*' ],
-      tasks: [ 'copy' ],
+      files: [ '<%= config.src %>/**/*.*' ],
+      tasks: [ 'copy:markup' ],
       options: {
         spawn: false
       }

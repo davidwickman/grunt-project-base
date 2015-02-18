@@ -14,11 +14,10 @@ module.exports = function( grunt ) {
       files: [ {
         expand: true,
         cwd: "<%= config.assets %>/",
-        src: [ "img/**/*" ],
+        src: "img/**/*.*",
         dest: "<%= config.dist %>/"
       } ]
-    },
-
+    }
   } );
 
   grunt.loadNpmTasks( 'grunt-contrib-copy' );

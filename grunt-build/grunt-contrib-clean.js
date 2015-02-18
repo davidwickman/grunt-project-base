@@ -5,7 +5,7 @@ module.exports = function( grunt ) {
     dist: [ "<%= config.dist %>" ],
     js: [ "<%= config.dist %>/js" ],
     css: [ "<%= config.dist %>/css" ],
-    images: [ "<%= config.dist %>/img"]
+    images: [ "<%= config.dist %>/img" ]
   } );
 
   grunt.loadNpmTasks( 'grunt-contrib-clean' );
