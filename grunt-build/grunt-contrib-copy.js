@@ -5,11 +5,20 @@ module.exports = function( grunt ) {
     markup: {
       files: [ {
         expand: true,
-        cwd: "src/",
-        src: [ "**/*.*", "!scss/**/*" ],
-        dest: "dist/"
+        cwd: "<%= config.src %>/",
+        src: [ "**/*.*", "!assets/**/*" ],
+        dest: "<%= config.dist %>/"
       } ]
-    }
+    },
+    images: {
+      files: [ {
+        expand: true,
+        cwd: "<%= config.assets %>/",
+        src: [ "img/**/*" ],
+        dest: "<%= config.dist %>/"
+      } ]
+    },
+
   } );
 
   grunt.loadNpmTasks( 'grunt-contrib-copy' );

@@ -2,9 +2,10 @@
 
 module.exports = function( grunt ) {
   grunt.config.set( 'clean', {
-    dist: [ "dist" ],
-    js: [ "dist/js" ],
-    css: [ "dist/css" ],
+    dist: [ "<%= config.dist %>" ],
+    js: [ "<%= config.dist %>/js" ],
+    css: [ "<%= config.dist %>/css" ],
+    images: [ "<%= config.dist %>/img"]
   } );
 
   grunt.loadNpmTasks( 'grunt-contrib-clean' );

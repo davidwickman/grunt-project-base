@@ -4,8 +4,8 @@ module.exports = function( grunt ) {
   grunt.config.set( 'concat', {
     js: {
       files: [ {
-        src: "src/js/**/*.js",
-        dest: "dist/js/site.js"
+        src: "<%= config.assets %>/js/**/*.js",
+        dest: "<%= config.dist %>/js/site.js"
       } ]
     }
   } );

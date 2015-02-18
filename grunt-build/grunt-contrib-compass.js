@@ -5,19 +5,19 @@ module.exports = function( grunt ) {
     local: {
       options: {
         httpPath: "/",
-        cssDir: "dist/css",
-        sassDir: "src/scss",
-        imagesDir: "src/img",
-        javascriptsDir: "src/js"
+        cssDir: "<%= config.dist %>/css",
+        sassDir: "<%= config.assets %>/scss",
+        imagesDir: "<%= config.assets %>/img",
+        javascriptsDir: "<%= config.assets %>/js"
       }
     },
     production: {
       options: {
         httpPath: "/",
-        cssDir: "dist/css",
-        sassDir: "src/scss",
-        imagesDir: "src/img",
-        javascriptsDir: "src/js",
+        cssDir: "<%= config.dist %>/css",
+        sassDir: "<%= config.assets %>/scss",
+        imagesDir: "<%= config.assets %>/img",
+        javascriptsDir: "<%= config.assets %>/js",
         outputStyle: 'compressed'
       }
     }

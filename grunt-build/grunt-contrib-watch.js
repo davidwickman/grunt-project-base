@@ -3,21 +3,28 @@
 module.exports = function( grunt ) {
   grunt.config.set( 'watch', {
     js: {
-      files: [ 'src/js/**/*.js' ],
+      files: [ '<%= config.assets %>/js/**/*' ],
       tasks: [ 'clean:js', 'concat:js' ],
       options: {
         spawn: false
       }
     },
     css: {
-      files: [ 'src/scss/**/*.scss' ],
+      files: [ '<%= config.assets %>/scss/**/*' ],
       tasks: [ 'clean:css', 'compass:local' ],
       options: {
         spawn: false
       }
     },
+    images: {
+      files: [ '<%= config.assets %>/img/**/*' ],
+      tasks: [ 'clean:images', 'copy:images' ],
+      options: {
+        spawn: false
+      }
+    },
     assets: {
-      files: [ 'src/**/*' ],
+      files: [ '<%= config.src %>/**/*' ],
       tasks: [ 'copy' ],
       options: {
         spawn: false

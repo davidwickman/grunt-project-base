@@ -1,7 +1,12 @@
 module.exports = function( grunt ) {
 
   grunt.initConfig( {
-    pkg: grunt.file.readJSON( 'package.json' )
+    pkg: grunt.file.readJSON( 'package.json' ),
+    config: {
+      src: 'src',
+      dist: 'dist',
+      assets: '<%= config.src %>/assets'
+    }
   } );
 
   grunt.loadTasks( 'grunt-build' );
